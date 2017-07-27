@@ -1,0 +1,63 @@
+display - flex - 後方元素換行
+        - inline-flex - 後方元素不會換行 => display: inline
+
+
+*內容元素排列方向
+flex-direction - row - 水平 A B C
+               - row-reverse - 水平倒序 C B A
+               - column - 垂直
+                                              A
+                                              B
+                                              C
+               - column-reverse - 垂直倒序
+                                                         C
+                                                         B
+                                                         A
+
+
+* 內容元素與"整個"flexbox的"水平對齊"位置
+justify-content - flex-start - 置左
+                - flex-end - 置右
+                - center - 置中
+                - space-between - 左右貼邊, 所有元素置中
+                - space-around - 平均分配, 間距也平均
+
+
+* 內容元素與"整個"flexbox的"垂直對齊"位置(單行)
+align-items - flex-start -置上
+            - flex-end - 置下
+            - center - 置中
+            - stretch - 上下撐開, 充滿flexbox空間
+            - baseline - 所有元素的基線作為基準對齊
+
+
+*用於覆寫以套用align-items的attribute
+align-self
+
+
+*內容元素為"多行"時, 與整個"flexbox"的對齊位置
+align-content - flex-start -置上
+              - flex-end - 置下
+              - cetner - 置中
+              - space-between - 上下貼邊
+              - space-around - 平均分配, 間距也平均
+              - stretch - 上下撐開, 充滿flexbox空間
+
+
+*讓內容元素的內容換行
+flex-wrap - nowrap - 單行
+          - wrap - 多行
+          - wrap-reverse - 多行且倒序(水平-由下往上, 垂直-由右往左)
+
+
+*指定數字排序
+order
+
+
+*
+flex:(flex-grow, flex-shrink, flex-basis)
+flex-grow: number: 1 => if flex-basis < parent? flex-grow : 0 (伸展比例)
+flex-shrink: number: 1 => if flex-basis > parent? flex-grow : 0 (壓縮比例)
+flex-basis: width: 0, auto
+
+
